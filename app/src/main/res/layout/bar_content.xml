@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txt_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="3dp"
+            android:drawableLeft="@drawable/tab_list_deal"
+
+            android:gravity="center"
+            android:textColor="@drawable/tab_menu_deal_text"
+            android:text="列表模式"/>
+
+        <TextView
+            android:id="@+id/txt_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="3dp"
+            android:drawableLeft="@drawable/tab_map_deal"
+            android:gravity="center"
+            android:textColor="@drawable/tab_menu_deal_text"
+            android:text="地图模式"/>
+    </LinearLayout>
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_above="@id/tab_menu"
+            >
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

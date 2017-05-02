@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#7C84A4">
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="@drawable/app_icon1" >
+    </ImageView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="欢迎登录"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+
+            android:orientation="vertical" >
+            <AutoCompleteTextView
+                android:id="@+id/username"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/shape_white"
+                android:drawablePadding="10dp"
+                android:hint="请输入您的用户名"
+                android:textColor="#3D3D3D"
+                android:textColorHint="#A1A8BD"
+                android:textSize="15sp" >
+            </AutoCompleteTextView>
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_white"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="请输入您的密码  "
+                android:inputType="textPassword"
+                android:textColorHint="#A1A8BD"
+                android:textSize="15sp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/shape_white"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="5dp">"
+            <CheckBox
+                android:id="@+id/cbRememberPwd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="记住密码"
+                android:textColor="#A1A8BD"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnForgetPwd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#FFFFFF"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:textColor="#A1A8BD"
+                android:textSize="15sp"
+                android:text="忘记密码？"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#A1A8BD"
+            android:background="@drawable/shape_white"
+            android:gravity="center"
+            android:text="登  录"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </Button>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/zhucexinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="啊，还没有账户？马上点击注册 "
+            android:textColor="#5E6A81"
+            android:textSize="14sp" >
+            "
+        </TextView>
+        <TextView
+            android:id="@+id/txtRegisterLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/zhucexinxi"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+    </RelativeLayout>
+</LinearLayout>

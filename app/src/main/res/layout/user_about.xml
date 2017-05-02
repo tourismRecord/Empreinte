@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF1F3">
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/app_icon1" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="20dp"
+                android:text="这里是ID"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/username" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:hint="昵称"
+            android:textColorHint="#A1A8BD"
+            android:id="@+id/remark" />
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:hint="性别"
+            android:textColorHint="#A1A8BD"
+            android:id="@+id/phone_number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:hint="年龄"
+            android:textColorHint="#A1A8BD"
+            android:id="@+id/academy" />
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:hint="出生日期"
+            android:textColorHint="#A1A8BD"
+            android:id="@+id/major" />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="提交信息"
+        android:textColor="#FFFFFF"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_gray"
+        android:id="@+id/add" />
+
+
+
+</LinearLayout>
