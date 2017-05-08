@@ -89,7 +89,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         int id = item.getItemId();
         switch (id){
             case R.id.edit_share:
-                Toast.makeText(MainActivity.this,"click photoButton",Toast.LENGTH_SHORT).show();
+                EditContentActivity.actionStart(MainActivity.this);
                 break;
             default:
 

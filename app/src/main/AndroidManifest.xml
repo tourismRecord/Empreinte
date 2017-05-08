@@ -39,6 +39,9 @@
             android:label="分享内容"
             android:launchMode="singleTask">
         </activity>
+        <activity android:name=".Activity.EditContentActivity"
+            android:label="编写内容"
+            android:launchMode="singleTask"></activity>
     </application>
 
 </manifest>

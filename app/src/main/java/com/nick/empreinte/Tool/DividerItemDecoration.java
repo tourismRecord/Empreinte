@@ -1,4 +1,4 @@
-package com.nick.empreinte.tool;
+package com.nick.empreinte.Tool;
 
 /**
  * Created by huanghaojian on 17/4/30.

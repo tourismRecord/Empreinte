@@ -17,7 +17,7 @@ import android.widget.Toast;
 import com.nick.empreinte.Adapter.MyShareContentReviewAdapter;
 import com.nick.empreinte.Model.Review;
 import com.nick.empreinte.R;
-import com.nick.empreinte.tool.DividerItemDecoration;
+import com.nick.empreinte.Tool.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.HashMap;

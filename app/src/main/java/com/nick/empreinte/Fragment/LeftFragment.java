@@ -2,7 +2,6 @@ package com.nick.empreinte.Fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,7 +13,7 @@ import android.widget.Toast;
 import com.nick.empreinte.Adapter.ShareContentAdapter;
 import com.nick.empreinte.Model.ShareContent;
 import com.nick.empreinte.R;
-import com.nick.empreinte.tool.DividerItemDecoration;
+import com.nick.empreinte.Tool.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
